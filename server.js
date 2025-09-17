@@ -9,9 +9,9 @@ const data = { books: jsonData }
 
 const router = jsonServer.router(data)
 const middlewares = jsonServer.defaults()
- 
+
 server.use(middlewares)
 server.use('/api', router)
 server.listen(process.env.PORT || 5000, () => {
-  console.log('JSON Server is running')
+    console.log('JSON Server is running')
 })
